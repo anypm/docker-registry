@@ -1,0 +1,10 @@
+stages:
+- name: build-stage
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: docker-registry-build-demo
+      pushRemote: true
+      registry: index.docker.io
+timeout: 60
