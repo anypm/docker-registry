@@ -6,5 +6,5 @@ stages:
       buildContext: .
       tag: docker-registry-build-demo
       pushRemote: true
-      registry: 116.85.13.70
+      registry: quay.io
 timeout: 60
